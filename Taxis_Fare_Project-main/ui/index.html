@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="./AnyoneAI.ico" type="image/x-icon">
+  <meta name="description" content="A web page that will help you to navigate New York City">
+  <title>NY Taxi Fare</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/bootstrap/css/bootstrap.min.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/parallax/jarallax.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/dropdown/css/style.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/socicon/css/styles.css?rnd=1740892347736">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/theme/css/style.css?rnd=1740892347736">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/1253703/assets/css/mbr-additional.css?rnd=1740892347736" type="text/css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="list.css">
+
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobirisePromo.container-banner {
+  height: 11rem;
+  opacity: 1;
+  -webkit-animation: 11s linear animationHeight;
+  -moz-animation: 11s linear animationHeight;
+    -o-animation: 11s linear animationHeight;
+       animation: 11s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobirisePromo.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobirisePromo .banner {
+  min-height: 11rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 11s linear animationBanner;
+  -moz-animation: 11s linear animationBanner;
+    -o-animation: 11s linear animationBanner;
+       animation: 11s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobirisePromo .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobirisePromo .buy-license {
+  text-decoration: underline;
+}
+#mobirisePromo .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+#mobirisePromo .mbr-section-abuse-report {
+  margin-top: 0.8rem;
+  font-size: 80%;
+}
+#mobirisePromo .mbr-section-abuse-report a {
+  color: #aaa;
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+
+@-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 575px) {
+  #mobirisePromo.container-banner {
+    height: 14rem;
+  }
+  #mobirisePromo .banner {
+    min-height: 14rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+
+  <section data-bs-version="5.1" class="menu menu01 ridem5 cid-uEeiMRqhy0" once="menu" id="menu-1-uEeiMRqhy0">
+
+    
+
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="menu_box container-fluid">
+            <div class="navbar-brand d-flex">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="https://r.mobirisesite.com/1253703/assets/images/photo-1436918671239-a2b72ace4880.jpeg" alt="">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption display-7" href="#">NY Taxi Fare</a></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                        <a class="nav-link link display-4" href="#map-1-uEeiMRtjOw">Map<br></a>
+                    </li></ul>
+                <div class="mbr-section-btn-main" role="tablist"><a class="btn btn-primary display-4" href="#list01-a">Predictions</a></div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header01 ridem5 cid-uEeiMRrYfp mbr-fullscreen mbr-parallax-background" id="hero-1-uEeiMRrYfp">
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(156, 234, 239);"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="title-wrapper">
+						<h2 class="mbr-section-title mbr-fonts-style display-1">Your Adventure Begins!</h2>
+						<div class="mbr-section-btn"><a class="btn btn-primary display-4" href="#formbuilder-1">Check it out</a></div>
+					</div>
+                    <div class="text-wrapper">
+						<p class="mbr-text mbr-fonts-style display-7">This is a AI powered site that will help you to navigate New York City</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article01 ridem5 cid-uEeiMRssq9" id="generic-text-1-uEeiMRssq9">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="content-wrapper">
+                    <p class="mbr-desc mbr-fonts-style display-4"></p>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">AI companion for New york Yellows Taxis</h2>
+                    <p class="mbr-text mbr-fonts-style display-4">Lets wrap your trips in New york using taxis</p>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary display-4" href="#formbuilder-1">Lets begin!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="row d-flex justify-content-center py-5">
+                    <div class="col-md-8 col-lg-6 col-xl-9">
+                        <div class="card1 text-body1" style="border-radius: 35px;">
+                            <div class="card-body1 p-4">
+                                <div class="d-flex">
+                                    <h6 class="flex-grow-1" id="location">New York</h6>
+                                    <h6 id="time">15:07</h6>
+                                </div>
+                                <div class="d-flex flex-column text-center mt-5 mb-4">
+                                    <h6 class="display1-4 mb-0 font-weight-bold" id="temperature">13°C</h6>
+                                    <span class="small1" style="color: #868B94" id="weather-condition">Stormy</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1" style="font-size: 1rem;">
+                                        <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="wind-speed">40 km/h</span></div>
+                                        <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="humidity">84%</span></div>
+                                        <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="sunshine">0.2h</span></div>
+                                    </div>
+                                    <div>
+                                        <img width="150px" id="weather-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateTime() {
+            const options = { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false };
+            const formatter = new Intl.DateTimeFormat([], options);
+            document.getElementById('time').textContent = formatter.format(new Date());
+        }
+    
+        setInterval(updateTime, 60000); // Actualiza cada minuto
+        updateTime(); // Llama a la función al cargar la página
+    </script>
+</section>    
+        <style>
+            body1 {
+                font-family: Arial, sans-serif;
+            }
+            .container1 {
+                max-width: 1400px; /* Increase the max-width for a larger container */
+                margin: 0 auto;
+                padding: 40px; /* Increase padding for more space */
+            }
+            .content-wrapper1 {
+                padding: 30px; /* Increase padding */
+            }
+            .mbr-section-title1 {
+                font-size: 3rem; /* Further increase the font size */
+            }
+            .mbr-text1 {
+                font-size: 2rem; /* Further increase the font size */
+            }
+            .mbr-section-btn1 .btn1 {
+                font-size: 2rem; /* Further increase the button font size */
+                padding: 20px 40px; /* Further increase button padding */
+            }
+            .card1 {
+                border-radius: 45px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.); /* Increase shadow for more depth */
+            }
+            .card-body1 {
+                padding: 80px; /* Further increase padding */
+            }
+            .card1 h6 {
+                font-size: 2rem; /* Further increase the font size */
+            }
+            .display1-4 {
+                font-size: 4rem; /* Further increase the font size */
+            }
+            .small1 {
+                font-size: 1.5rem; /* Further increase the font size */
+            }
+            .card-weather1{
+                width: 200px;
+                height: 200px;
+            }
+            .fas1 {
+                font-size: 2rem; /* Further increase icon size */
+            }
+            img {
+                width: 200px; /* Further increase image size */
+                height: 200px;
+            }
+        </style>
+</section>
+
+<section data-bs-version="5.1" class="features04 ridem5 cid-uEeiMRu4FW" id="features-4-uEeiMRu4FW">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="|Dinamic Map for your inmersive experience| " data-direction="-1" data-speed="0.03"></div>
+        <div class="item display-1" data-linewords="|Dinamic Map for your inmersive experience| " data-direction="-1" data-speed="0.03"></div>
+      </div>
+    
+  </div>
+</section>
+
+<section class="form cid-uEekh1CFvI" id="formbuilder-1">
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto mbr-form">
+<!--Formbuilder Form-->
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler">
+<div class="form-row">
+
+<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+</div>
+<div class="dragArea row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h4 class="mbr-fonts-style display-5">Please enter valid NY addreses</h4>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<hr>
+</div>
+<div data-for="Start Point" class="col-lg-12 col-md-12 col-sm-12 form-group">
+<input type="text" name="Start Point" placeholder="Start Point" data-form-field="Start Point" class="form-control display-7" value="" id="Start Point-formbuilder-1">
+</div>
+<div data-for="End point" class="col-lg-12 col-md-12 col-sm-12 form-group">
+<input type="text" name="End point" placeholder="End Point" data-form-field="End point" class="form-control display-7" value="" id="End point-formbuilder-1">
+</div>
+<div data-for="Number" class="col-lg-12 col-md-12 col-sm-12 form-group">
+<input type="text" name="Number" placeholder="Number of Passengers" data-form-field="Number" class="form-control display-7" value="" id="Number-formbuilder-1">
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p class="mbr-fonts-style display-7">
+</p>
+</div>
+<div class="col-auto">
+<button type="submit" class="w-100 w-100 btn btn-primary display-7" id="submitButton">Submit</button>
+</div>
+</div>
+</form><!--Formbuilder Form-->
+</div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="map01 ridem5 cid-uEeiMRtjOw" id="map-1-uEeiMRtjOw">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <div class="google-map">
+                        <div frameborder="0" id="map" style="width: 100%; height: 650px; border:0; allowfullscreen;" allowfullscreen="">
+                            <script src="map.js"></script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhBrF6rtcc0VS066RFF012bBd0sRJAJU&callback=initMap"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-bs-version="5.1" class="list01 ridem5 cid-uG26y2W7G9" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor" id="list01-a" data-rv-view="93">
+    
+
+    <div class="mbr-fallback-image disabled" mbr-if="this | fakeFilter uname__22 _params.bg.type" data-app-remove-it="true" style="display: none;"></div>
+    <div class="mbr-overlay" mbr-if="this | fakeFilter uname__23 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__24 _params.overlayOpacity | toNULL" mbr-bg-color="this | fakeFilter uname__25 _params.overlayColor | toNULL" data-app-remove-it="true" style="display: none; opacity: 0.8; background-color: rgb(255, 255, 255);"></div>
+
+    <div mbr-class2="this | fakeFilter uname__26 _params.fullWidth _params.fullWidth" class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <p class="mbr-desc mbr-fonts-style display-4" mbr-if="this | fakeFilter uname__29 _params.showDesc" data-app-selector=".mbr-desc" mbr-class-var="uname__27" mbr-on-change-theme-style="uname__28" data-app-edit="content" mbr-static-html="uname__30" mbr-content-edit="uname__30" data-app-placeholder="Type Text" mbr-on-change-component-node="uname__31" data-class-var="display-4" data-app-remove-it="true" style="display: none;">
+                        </p>
+                    <div id="bootstrap-accordion_16" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_16" aria-expanded="true" aria-controls="collapse1">
+                                    <h4 class="panel-title-edit mbr-fonts-style display-2" data-app-selector=".panel-title-edit" mbr-class-var="uname__32" mbr-on-change-theme-style="uname__33" data-app-edit="content" mbr-static-html="uname__34" mbr-content-edit="uname__34" data-app-placeholder="Type Text" mbr-on-change-component-node="uname__35" data-class-var="display-2">
+                                        <b>Fare and Trip Prediction</b>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="panel-collapse noScroll collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_16" style="">
+                                <div class="panel-body">
+                                    <ul class="list mbr-fonts-style display-7" data-app-selector=".list, .item-wrap" data-multiline="true" mbr-class-var="uname__36" mbr-on-change-theme-style="uname__37" data-app-edit="full" mbr-static-html="uname__38" mbr-content-edit="uname__38" data-app-placeholder="Type Content" mbr-on-change-component-node="uname__39" data-class-var="display-7">
+                                        <li class="item-wrap" id="trip_fare"><b>$</b> </li>
+                                        <li class="item-wrap" id="trip_duration"><b>Time</b> </li>
+                                        <li class="item-wrap" id="distance"><b>Distance</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article02 ridem5 cid-uEeiMRx1MU" id="generic-text-2-uEeiMRx1MU">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">We hope you had a nice experience!</h2>
+                    <p class="mbr-text mbr-fonts-style display-7">Our website was designed for your comfort and useful insight into New York taxi services</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image01 ridem5 cid-uEeiMRxNZn mbr-fullscreen mbr-parallax-background" id="image-2-uEeiMRxNZn">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer01 ridem5 cid-uEeiMRy3wj" once="footers" id="footer-1-uEeiMRy3wj">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="content-wrapper">
+                    <h2 class="mbr-section-title mbr-fonts-style display-5">AI Companion for New york trips</h2>
+                    <p class="mbr-text mbr-fonts-style display-4">AI was used to help you predict taxis fare and trip durations using yellow taxi service as a project to test the Team4 capabilities to develop a web service for AnyoneAI</p>
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary display-4" href="#Top">Back to the Top</a>
+                    </div>
+                </div>
+
+            <div class="col-12">
+                <div class="copy-wrapper">
+                    
+                    <p class="mbr-copy mbr-fonts-style display-4">© 2025 NY Taxi Fare and Trip duration . All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/1253703/assets/web/assets/jquery/jquery.min.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/parallax/jarallax.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/smoothscroll/smooth-scroll.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/ytplayer/index.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/dropdown/js/navbar-dropdown.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/vimeoplayer/player.js?rnd=1740892347736"></script>
+  <script src="https://r.mobirisesite.com/1253703/assets/theme/js/script.js?rnd=1740892347736"></script>
+  
+  
+  
+
+</body>
+</html>
